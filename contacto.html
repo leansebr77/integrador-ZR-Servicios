@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 </head>
+
 <body>
     <h1>Contacto</h1>
+    <form id="formulario" name="formulario" action="" method="get" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Informacion Basica</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="Nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="Apellido">
+
+            <label for="dni">DNI:</label>
+            <input type="number" name="DNI">
+        </fieldset>
+        <fieldset>
+            <legend>Informacion del Contacto</legend>
+
+            <label for="telefono">Telefono:</label>
+            <input type="number" name="telefono">
+
+            <label for="email">email:</label>
+            <input type="email" name="email">
+
+            <label for="comentarios">comentarios</label>
+            <textarea name="comentarios" id="" cols="90" rows="30"></textarea>
+
+            <select name="ciudad" multiple>
+                <option value="firmat">Firmat</option>
+                <option value="casilda">Casilda</option>
+                <option value="venado tuerto">Venado Tuerto</option>
+            </select>
+
+        </fieldset>
+
+        
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Guardar">
+
+    </form>
 </body>
+
 </html>
